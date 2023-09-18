@@ -235,7 +235,7 @@ if not os.path.exists(maze_slice_dir_name):
     os.makedirs(maze_slice_dir_name)
 
 maze_edge_x = (path_width * num_cols - 1) + (wall_width * num_cols - 1) + path_width
-maze_edge_y = (path_width * num_rows) + (wall_width * num_rows) + path_width
+maze_edge_y = (path_width * num_rows - 1) + (wall_width * num_rows - 1) + path_width
 
 # Create individual A4-sized maze segments
 for y in range(a4_pages_required_vertical):
